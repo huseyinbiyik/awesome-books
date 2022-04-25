@@ -1,0 +1,204 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  animation: animation 40s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes animation {
+  0% {
+    background-color: #ca7;
+  }
+
+  25% {
+    background-color: #e98;
+  }
+
+  50% {
+    background-color: #544;
+  }
+
+  75% {
+    background-color: #fd9;
+  }
+
+  100% {
+    background-color: #eee;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar {
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+#nav-bar #logo {
+  margin-left: 15px;
+}
+
+#nav-bar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 10px;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+#nav-bar nav ul li a {
+  padding: 10px;
+  border-right-width: 2.5px;
+  border-right-color: black;
+  border-right-style: solid;
+}
+
+#nav-bar nav ul li:last-child a {
+  border: none;
+}
+
+#last-modified-container {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+#list {
+  margin: 50px auto 100px auto;
+  width: calc(100% - 40px);
+  text-align: center;
+  display: block;
+}
+
+#list #book-list {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#list #book-list .single-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#list #book-list .single-book:nth-child(odd) {
+  background: gray;
+}
+
+#list #book-list .single-book p {
+  margin-left: 20px;
+}
+
+#list #book-list .single-book button {
+  margin-right: 20px;
+  border: 2px solid black;
+  box-shadow: 5px 5px black;
+  padding: 10px 15px;
+}
+
+/* Add New Section */
+#add-new {
+  display: none;
+}
+
+#add-new #add-section {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#add-new #add-section h1 {
+  margin-bottom: 60px;
+}
+
+#add-new #add-section .input-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+
+#add-new #add-section .input-button-wrapper input {
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#add-new #add-section .input-button-wrapper input::placeholder {
+  color: black;
+}
+
+#add-new #add-section #add_Button {
+  align-self: flex-end;
+  border: 2px solid black;
+  box-shadow: 5px 5px black;
+  padding: 10px 15px;
+}
+
+/* Add New Section */
+
+/* Contact Section */
+#contact {
+  margin: 0 auto;
+  width: 40%;
+  display: none;
+}
+
+#contact #contact-wrapper h1 {
+  margin-bottom: 50px;
+}
+
+#contact #contact-wrapper .contact-text p {
+  text-align: left;
+}
+
+#contact #contact-wrapper #contact-ul li {
+  margin: 0 auto;
+}
+
+#contact #contact-wrapper #contact-ul li p {
+  width: 100%;
+  text-align: left;
+}
+
+/* Contact Section */
+
+footer {
+  display: block;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: left;
+  position: fixed;
+  width: calc(100% - 40px);
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(15px);
+}
+
+footer h3 {
+  margin-left: 30px;
+}
