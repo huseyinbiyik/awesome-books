@@ -6,16 +6,16 @@ export function showListSection() {
   listSection.style.display = 'block';
   addNewSection.style.display = 'none';
   contactSection.style.display = 'none';
-};
+}
 
-export function showAddNew(){
+export function showAddNew() {
   addNewSection.style.display = 'block';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
-};
+}
 
 export function showContact() {
   contactSection.style.display = 'block';
   addNewSection.style.display = 'none';
   listSection.style.display = 'none';
-};
+}
