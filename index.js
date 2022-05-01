@@ -1,6 +1,7 @@
 
 import { Bookmanagement } from "./modules/bookmanagement.js";
 import {addNew} from "./modules/addNew.js";
+import {removeBooks} from "./modules/removeBooks.js"
 
 const addForm = document.querySelector('form');
 const title = document.querySelector('#title');
@@ -13,14 +14,10 @@ if (!JSON.parse(localStorage.getItem('books'))) {
 Bookmanagement.display();
 
 addForm.addEventListener('submit', addNew);
+let deleteButtons = document.querySelectorAll('.delete-button');
 
-let delBtn = document.querySelectorAll('.delete-button');
-delBtn.forEach((button) => {
-  button.addEventListener('click', (e) => {
-    Bookmanagement.delete(e.target.id);
-  })
-})
 
+deleteButtons.forEach(removeBooks);
 
 // Time
 const lastMod = document.querySelector('#last-modified');
