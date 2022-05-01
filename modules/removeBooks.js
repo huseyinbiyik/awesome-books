@@ -1,6 +1,6 @@
 import {
   Bookmanagement
-} from "./bookmanagement.js";
+} from "./bookmanagement.js"
 
 export function removeBooks(button) {
   button.addEventListener('click', (e) => {
