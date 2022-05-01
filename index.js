@@ -12,6 +12,9 @@ import {
   showAddNew,
   showContact
 } from "./modules/navigation.js";
+import {
+  DateTime
+} from "./modules/luxon.js"
 
 const addForm = document.querySelector('form');
 const navListBtn = document.querySelector('#nav-list');
@@ -33,10 +36,10 @@ addForm.addEventListener('submit', addNew);
 const deleteButtons = document.querySelectorAll('.delete-button');
 deleteButtons.forEach(removeBooks);
 
-
 // Time
-const lastMod = document.querySelector('#last-modified');
-lastMod.innerHTML = document.lastModified;
+const time = document.querySelector('#time');
+const dt =  DateTime.now();
+time.innerHTML = dt.toLocaleString(DateTime.DATETIME_MED);
 
 // Navigation
 navListBtn.addEventListener('click', showListSection);
