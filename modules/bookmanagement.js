@@ -1,5 +1,4 @@
-export class Bookmanagement {
-
+export class BookManagement {
   static add(title, author) {
     let restoredData = JSON.parse(localStorage.getItem('books'));
     let aBook = {
@@ -20,7 +19,6 @@ export class Bookmanagement {
       <p>${element.title} and ${element.author}</p>
       <button class="delete-button"  id="${element.id}" >REMOVE</button>
       </div>`
-
     })
   }
 

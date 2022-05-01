@@ -8,7 +8,6 @@ export function showListSection() {
   contactSection.style.display = 'none';
 };
 
-
 export function showAddNew(){
   addNewSection.style.display = 'block';
   listSection.style.display = 'none';

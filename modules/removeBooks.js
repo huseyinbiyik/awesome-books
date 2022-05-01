@@ -1,9 +1,9 @@
 import {
-  Bookmanagement
-} from "./bookmanagement.js"
+  BookManagement
+} from "./BookManagement.js"
 
 export function removeBooks(button) {
   button.addEventListener('click', (e) => {
-    Bookmanagement.delete(e.target.id);
+    BookManagement.delete(e.target.id);
   })
 }

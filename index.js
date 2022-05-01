@@ -1,6 +1,6 @@
 import {
-  Bookmanagement
-} from "./modules/bookmanagement.js";
+  BookManagement
+} from "./modules/BookManagement.js";
 import {
   addNew
 } from "./modules/addNew.js";
@@ -8,18 +8,12 @@ import {
   removeBooks
 } from "./modules/removeBooks.js";
 import {
-  showListSection
-} from "./modules/navigation.js";
-import {
-  showAddNew
-} from "./modules/navigation.js";
-import {
+  showListSection,
+  showAddNew,
   showContact
 } from "./modules/navigation.js";
 
 const addForm = document.querySelector('form');
-const title = document.querySelector('#title');
-const author = document.querySelector('#author');
 const navListBtn = document.querySelector('#nav-list');
 const navAddNewBtn = document.querySelector('#nav-add-new');
 const navContactBtn = document.querySelector('#nav-contact');
@@ -29,13 +23,15 @@ if (!JSON.parse(localStorage.getItem('books'))) {
   localStorage.setItem("books", JSON.stringify([]));
 }
 
-Bookmanagement.display();
+//Show the books on localStorage
+BookManagement.display();
 
+//Add a book
 addForm.addEventListener('submit', addNew);
 
+//Dynamic remove buttons
 const deleteButtons = document.querySelectorAll('.delete-button');
 deleteButtons.forEach(removeBooks);
-
 
 
 // Time

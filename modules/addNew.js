@@ -1,9 +1,12 @@
 import {
-  Bookmanagement
-} from "./bookmanagement.js";
+  BookManagement
+} from "./BookManagement.js";
 
-export function addNew(e) {
+const title = document.querySelector('#title');
+const author = document.querySelector('#author');
+
+export const addNew = (e) => {
   e.preventDefault();
-  Bookmanagement.add(title.value, author.value);
+  BookManagement.add(title.value, author.value);
   location.reload();
 };
