@@ -25,7 +25,8 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": ["modules"]
+        "extensions": [".js"],
+      "moduleDirectory": ["modules"]
       }
     }
   }
