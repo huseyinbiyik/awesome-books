@@ -1,6 +1,6 @@
 import
 BookManagement
-from './modules/BookManagement.js';
+from "./modules/bookmanagement.js";
 import
 addNew
 from './modules/addNew.js';
