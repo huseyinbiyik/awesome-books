@@ -10,6 +10,10 @@
 - CSS3
 - JavaScript
 
+### Live Link
+
+[Live Link](https://huseyinbiyik.github.io/awesome-books)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -32,10 +36,6 @@ No need to install. Open the index.html file with a browser.
 ### Usage
 
 You can navigate through the navigation bar to see the different pages.
-
-### Deployment
-
-[Live Link](https://huseyinbiyik.github.io/awesome-books)
 
 ## Authors
 
