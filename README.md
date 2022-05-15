@@ -35,7 +35,7 @@ You can navigate through the navigation bar to see the different pages.
 
 ### Deployment
 
-You can check the Github Pages link.
+[Live Link](https://huseyinbiyik.github.io/awesome-books)
 
 ## Authors
 
