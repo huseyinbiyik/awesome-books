@@ -16,7 +16,7 @@ export default class BookManagement {
     restoredData.forEach((element) => {
       display.innerHTML += `
       <div class="single-book">
-      <p>${element.title} and ${element.author}</p>
+      <p>${element.title} by ${element.author}</p>
       <button class="delete-button"  id="${element.id}" >REMOVE</button>
       </div>`;
     });
