@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-> Awesome Books is an application which you can add, delete and display your awesome books!
+> A single page web application which you can save and list your favourite books. Built with vanilla JavaScript and localStorage.
 
 ## Built With
 
