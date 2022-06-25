@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-> A single page web application which you can save and list your favourite books. Built with vanilla JavaScript and localStorage.
+> A single-page web application that you can save and list your favorite books. Built with vanilla JavaScript and localStorage.
 
 ## Built With
 
