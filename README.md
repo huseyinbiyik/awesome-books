@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome-Books-ES6
+# Awesome Books
 
 > Awesome Books is an application which you can add, delete and display your awesome books!
 
